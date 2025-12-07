@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int N;
+    double price;
+    double total = 0;
+    int coustomCount = 0;
+    
+    cout<<"Enter no of cake order: ";
+    cin>>N;
+    
+    for(int i = 1; i<=N;i++){
+        cout<<"Enter price for cake"<<i<<": ";
+        cin>>price;
+        
+        total= total+price;
+        
+        if(price>1200){
+            cout<<"Coustomcake"<<endl;
+            coustomCount++;
+        }
+    }
+    cout<<"\nTotal Earning: "<<total<<endl;
+    cout<<"Number of custom cakes: "<<coustomCount<<endl;
+    
+    return 0;
+    
+    
+}
+
+
